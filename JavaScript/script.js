@@ -85,7 +85,7 @@ function display1(){
     return x;
 }
 
-function variable_scope(){
+function variable_scope(x,y){
 
     //two types of scope:
     //1. block scope = let
@@ -130,3 +130,15 @@ function variable_scope(){
 }
 
 variable_scope();
+
+function print(param1, param2){
+    var x; //function scope
+    let y; //block scope
+    const z; //block scope
+    
+    
+}
+
+
+//function calling
+print("Hello", "World");
