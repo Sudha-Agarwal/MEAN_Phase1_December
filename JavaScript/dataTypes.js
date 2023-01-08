@@ -42,14 +42,15 @@ console.log(arr[3]);
 
 console.log("array length: " + arr.length)
 for(var i=0; i<arr.length; i++){
-    console.log((arr[i]));
+    //console.log((arr[i]));
 }
 
 //array of objects
 
 var arrayOfObj = [
     {
-        id:001
+        id:001,
+        name:"sudha"
     },
     {
         id:002
@@ -59,7 +60,24 @@ var arrayOfObj = [
     }
 ];
 
-for()
+for(x in arrayOfObj){
+    //console.log(arrayOfObj[x]);
+}
+
+//function definition
+function abc(param1, param2){
+
+    return 0;
+
+}
+
+//function calling
+abc("Hello","World");
+
+console.log(typeof(arr));
+
+
+
 
 
 

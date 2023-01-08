@@ -1,4 +1,14 @@
-var gloabl = "global";
+var gloabl = "global from JS";
+
+obj = {
+    id:10
+}
+
+function changeVal(){
+    document.getElementById("id").innerHTML = gloabl;
+
+}
+
 
 function display(){
     alert("hi");
@@ -113,7 +123,7 @@ function variable_scope(x,y){
     var x = 10;
 
     //let variable can't be redeclared in the current scope
-    let y = 10;
+    //let y = 10;
      y = 20;
 
     if(x == 10){
@@ -134,8 +144,8 @@ variable_scope();
 function print(param1, param2){
     var x; //function scope
     let y; //block scope
-    const z; //block scope
-    
+    //const z; //block scope
+
     
 }
 
