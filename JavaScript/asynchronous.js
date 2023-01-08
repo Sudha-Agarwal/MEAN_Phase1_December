@@ -40,5 +40,17 @@ function getTodoCallback(callback1){
 function printData(data){
     console.log(data.text);
 }
+//getTodoCallback(printData);
 
-getTodoCallback(printData);
+//second way - with anonymous functions
+getTodoCallback(function (data){
+    console.log(data.text);
+});
+
+
+function abc(){
+
+    return function xyz(){
+        
+    }
+}
