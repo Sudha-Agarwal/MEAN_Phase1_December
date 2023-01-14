@@ -40,3 +40,36 @@ asyncFun("Sudha1").then(function (data){
 }).catch(function (data){
     console.log(data);
 });
+
+
+
+
+
+
+
+function myPromise(){
+
+    let promise_obj = new Promise(function(resolve,reject){
+        resolve("resolved");        
+        reject("rejected");
+    });
+
+    return promise_obj;
+}
+
+function resolvedData(data){
+    console.log(data);
+}
+
+function rejectedData(data){
+    console.log(data);
+}
+
+myPromise().then(function(data){
+    console.log(data);
+}).catch(function(data){
+    console.log(data);
+});
+
+
+
