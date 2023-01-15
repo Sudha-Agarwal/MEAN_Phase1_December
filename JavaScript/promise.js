@@ -42,11 +42,6 @@ asyncFun("Sudha1").then(function (data){
 });
 
 
-
-
-
-
-
 function myPromise(){
 
     let promise_obj = new Promise(function(resolve,reject){

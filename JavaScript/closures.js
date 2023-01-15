@@ -1,13 +1,13 @@
 //function returning function
 
-function greeting(){
+var greeting = () =>{
     let message = 'hi';
 
-    function sayHi(){
+    return () => {
         console.log(message);
     }
 
-    return sayHi;
+    //return sayHi;
 }
 
 let hi = greeting();
@@ -18,7 +18,7 @@ hi();
 const add = (function(){   
     let counter = 0;
     return {
-        increment: function(){
+        increment: () =>{
         counter +=1;
         return counter;
     },   

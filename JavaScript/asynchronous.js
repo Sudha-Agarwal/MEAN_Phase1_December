@@ -31,7 +31,7 @@ function getTodo(){
 //with callback
 
 function getTodoCallback(callback1){
-    setTimeout(function(){
+    setTimeout(() =>{
         var data = {text:"Data complete"};
         callback1(data);
     },2000);
@@ -43,7 +43,7 @@ function printData(data){
 //getTodoCallback(printData);
 
 //second way - with anonymous functions
-getTodoCallback(function (data){
+getTodoCallback(data =>{
     console.log(data.text);
 });
 
