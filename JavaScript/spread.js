@@ -9,3 +9,4 @@ console.log(Math.min(...arr3));
 let weakmap = new WeakMap();
 
 weakmap.set("str", "abc");//not allowed
+
